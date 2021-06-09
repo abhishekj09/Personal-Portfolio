@@ -1,0 +1,130 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Project1.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/2593c7d8fc.js" crossorigin="anonymous"></script>
+    <script src="Project1.js" defer></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li id="port-f"><a href="" onclick="location.reload()">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#project-head">Projects</a></li>
+            <li><a href="#skills-head">Skills</a></li>
+        </ul>
+    </div>
+    <div class="about" id="about">
+        <img src="leone-venter-VieM9BdZKFo-unsplash.jpg" alt="table" />
+        <div>
+            <h1>Hi, I'm Abhishek</h1>
+            <p>An undergradute majoring in Computer Science.</p>
+        </div>
+    </div>
+    <div class="education" id="education">
+        <h1><i class="fas fa-graduation-cap"></i> Education</h1>
+        <div class="container">
+            <p>B.S. in Computer Science (Graduation: May, 2022)</p>
+            <p>Pennsylvania State University, University Park, PA - 16802</p>
+            <p id="corner">GPA - 3.5/4.0</p>
+        </div>
+
+        <h2 style="margin-left: .7rem;">Relevant Courses</h2>
+        <div class="relevant">
+            <div class="rel-el scroll slide-left" id="rel-1">
+                <h3>Data Structures and Algorithm</h3>
+                <h3>Programming and Computing (Python)</h3>
+                <h3>Digital Design</h3>
+            </div>
+            <div class="rel-el scroll zoom-in" id="rel-2">
+                <h3>Systems Programming</h3>
+                <h3>Object Oriented Programming</h3>
+                <h3>Computer Organisation and Design</h3>
+            </div>
+            <div class="rel-el scroll slide-right" id="rel-3">
+                <h3>Operating System</h3>
+                <h3>Database</h3>
+                <h3>Computational Theories</h3>
+            </div>
+        </div>
+    </div>
+    <h1 class="proj-head" id="project-head"><span><i class="fa fa-project-diagram"></i> Projects</span></h1>
+    <div class="projects">
+        <div class="proj-el scroll slide-left">
+            <img src="ferenc-almasi-eYpcLDXHVb0-unsplash.jpg" alt="Web Development" />
+            <div class="cont">
+                <ul>
+                    <li>Created a personal portfolio website using HTML/CSS</li>
+                    <li>Used JavaScript for the dynamic components</li>
+                </ul>
+            </div>
+        </div>
+        <div class="proj-el scroll zoom-in">
+            <img src="sigmund-UmaojK7erQo-unsplash.jpg" alt="App Development" />
+            <div class="cont">
+                <ul>
+                    <li>Designed user interface for a mobile app using flutter framework</li>
+                    <li>Worked on a team to make it responsive and adaptive to android and iOS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="proj-el scroll slide-right">
+            <img src="olivier-collet-JMwCe3w7qKk-unsplash.jpg" alt="CPU" />
+            <div class="cont">
+                <ul>
+                    <li>Created a filesystem system using C in ubuntu</li>
+                    <li>Designed an LRU cache for efficiency using double linked list</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h1 class="proj-head" id="skills-head"><span><i class="fa fa-code"></i> Skills</span></h1>
+    <div class="skills">
+        <div class="list">
+            <ul>
+                <li onclick="skills('web')">Web Development <i class="fas fa-chevron-right"></i></li><br>
+                <li onclick="skills('app')">App Development <i class="fas fa-chevron-right"></i></li><br>
+                <li onclick="skills('systems')">Systems Programming <i class="fas fa-chevron-right"></i></li>
+            </ul>
+        </div>
+        <div class="ski-el scroll slide-right" id="web">
+            <h2>Web Devlopment</h2>
+            <h3>Front-End</h3>
+            <p>HTML, CSS, JavaScript, React</p>
+            <h3>Back-End</h3>
+            <p>NodeJS, Django(pyhton), MySQL</p>
+        </div>
+
+        <div class="ski-el scroll slide-right" id="app">
+            <h2>App Devlopment</h2>
+            <h3>Front-End</h3>
+            <p>Flutter(Dart), Java(GUI)</p>
+            <h3>Back-end</h3>
+            <p>Java, MySQL</p>
+        </div>
+
+        <div class="ski-el scroll slide-right" id="systems">
+            <h2>Systems Programming</h2>
+            <p>C/C++, Linux, Kernel, Shell Programing</p>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="https://github.com/abhishekj09" target="_blank" class="fab fa-github"></a></li>
+            <li><a href="" class="fab fa-instagram"></a></li>
+            <li><a href="" class="fab fa-facebook"></a></li>
+            <li><a href="mailto:abhishekjangra85@gmail.com" target="_blank" class="far fa-envelope"></a></li>
+        </ul>
+    </div>
+</body>
+</html>

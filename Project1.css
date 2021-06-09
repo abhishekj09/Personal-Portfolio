@@ -1,0 +1,382 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+.navbar ul {
+    background-color: #eeeeee;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+    padding:0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 1rem;
+}
+.navbar ul a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    transition: 0.3s;
+}
+
+.navbar ul a:hover {
+    transform: translateY(-5%);
+    opacity: 0.5;
+}
+
+.navbar ul a:active {
+    transform: translateY(5%);
+}
+
+#port-f {
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.about {
+    position: relative;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.about div h1 {
+    animation-name: emerge-right-main;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+.about div p {
+    animation-name: emerge-left-main;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+.education {
+    width: 90%;
+    padding-top: 4rem;
+    margin: 0 auto 0;
+}
+
+.education .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 25vh;
+}
+
+.education h1 {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+}
+
+.education p {
+    margin: 0;
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.relevant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 0;
+    align-items: center;
+    height: 40vh;
+}
+#corner {
+    display: inline-block;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    font-weight: bold;
+}
+
+.proj-head {
+    width: 90%;
+    padding-top: 4rem;
+    margin: 1rem auto 0.4rem;
+}
+
+.proj-head span {
+    border-bottom: 1px solid black;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80vh;
+    margin: 2rem auto;
+    margin-top: 0;
+    align-items: center;
+    
+}
+
+.proj-el {
+    width: 33.33%;
+    min-height: 45vh;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px 0 rgba(204, 204, 204, 0.3);
+}
+
+.proj-el img {
+    width: 100%;
+    max-height: 30vh;
+}
+
+.cont {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.cont ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 75vh;
+    margin: auto;
+}
+
+.list {
+    width: 25%;
+}
+
+.list ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.list ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.list ul li:hover {
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.list ul li:hover i {
+    transition: .1s;
+    transform: translateX(100%);
+}
+
+.ski-el {
+    display: none;
+    width: 50%;
+}
+
+#web {
+    display: block;
+}
+
+@keyframes emerge-left-main {
+    from {
+        transform: scale(0.1) translateX(-200%);
+    }
+
+    to {
+        transform: scale(1.0) translate(-50%, -50%);
+    }
+}
+
+@keyframes emerge-right-main {
+    from {
+        transform: scale(0.1) translateX(200%);
+        
+    }
+
+    to {
+        transform: scale(1.0) translate(-50%, -50%);
+        
+    }
+}
+
+@keyframes emerge-right {
+    0% {
+        transform: scale(0.0) translateX(200%);
+        
+    }
+
+    100% {
+        transform: scale(1.0) translateX(0%);
+       
+    }
+}
+
+@keyframes emerge-left {
+    0% {
+        transform: scale(0.0) translateX(-200%);
+       
+    }
+
+    100% {
+        transform: scale(1.0) translateX(0%);
+      
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.0);
+        
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.ski-el h2 {
+    display: inline;
+    border-bottom: 1px solid black;  
+}
+
+.footer ul {
+    background-color: #eeeeee;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li a {
+    font-size: 2rem;
+    margin: 1rem;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer ul li a:hover {
+    transform: translateY(-5%);
+    opacity: 0.5;
+}
+
+.footer ul li a:active {
+    transform: translateY(5%);
+}
+   
+.scrolled.slide-left {
+    animation: emerge-left 2s both;
+}
+   
+.scrolled.slide-right {
+    animation: emerge-right 2s both;
+}
+
+.scrolled.zoom-in {
+    animation: zoom 2s both;
+}
+
+.scroll {
+    opacity: 0;
+    transition: opacity 1s;
+}
+  
+.scroll.scrolled {
+    opacity: 1;
+}
+
+@media screen and (max-width: 650px) {
+    .navbar ul {
+        justify-content: center;
+    }
+
+    .navbar li {
+        display: none;
+    }
+
+    #port-f {
+        display: block;
+        margin: 1rem;
+    }
+
+    .education p {
+        font-size: 1rem;
+    }
+
+    #corner {
+        display: none;
+    }
+
+    .relevant {
+        flex-direction: column;
+        height: auto;
+        align-items: unset;
+        justify-content: center;
+    }
+
+    .rel-el {
+        text-align: center;
+    }
+
+    .rel-el h3:first-child {
+        margin-top: 0;
+    }
+
+    .projects {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .proj-el {
+        width: 100%;
+    }
+}
