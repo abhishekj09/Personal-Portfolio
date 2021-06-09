@@ -379,4 +379,31 @@ body {
     .proj-el {
         width: 100%;
     }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .list {
+        width: 100%;
+    }
+
+    .ski-el {
+        width: 100%;
+        text-align: center;
+    }
+
+    .list ul {
+        flex-direction: row;
+    }
+
+    .proj-head {
+        padding-top: 0;
+    }
+
+    #project-head {
+        padding-top: 3rem;
+    }
 }
