@@ -414,9 +414,13 @@ body {
     .list ul li {
         font-size: 0.8rem;
     }
+
+    .list ul li i {
+        display: none;
+    }
     
     .list ul li:hover {
-        padding: 0;
+        padding: 0.5rem;
         font-size: 0.8rem;
     }
 
