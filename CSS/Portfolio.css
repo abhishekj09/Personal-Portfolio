@@ -379,6 +379,7 @@ body {
 
     .proj-el {
         width: 100%;
+        height: auto;
     }
 
     .skills {
