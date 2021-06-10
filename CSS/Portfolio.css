@@ -365,6 +365,7 @@ body {
 
     .rel-el {
         text-align: center;
+        font-size: 0.8rem;
     }
 
     .rel-el h3:first-child {
@@ -380,10 +381,15 @@ body {
         width: 100%;
     }
 
+    .proj-el li {
+        font-size: 0.8rem;
+    }
+
     .skills {
         flex-direction: column;
         align-items: center;
-        height: auto;
+        height: 60vh;
+        justify-content: flex-start;
     }
 
     .list {
@@ -413,6 +419,25 @@ body {
     
     .list ul li:hover {
         padding: 0.5rem;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
+
+    .list ul li:hover i {
+        transition: .2s;
+    }
+
+    .about div h1 {
+        font-size: 1rem;
+    }
+    
+    .about div p {
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .education p {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
 }
