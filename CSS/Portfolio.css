@@ -406,4 +406,17 @@ body {
     #project-head {
         padding-top: 3rem;
     }
+
+    .list ul li {
+        display: inline-block;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: .3s;
+    }
+    
+    .list ul li:hover {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
 }
